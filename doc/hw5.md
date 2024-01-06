@@ -11,7 +11,8 @@ Igény a struktúrált logolás (pl. json) is, ezért a lehetséges opciók köz
 a jó választás.
 
 ```yaml
-loggingMode: stdout-json```
+loggingMode: stdout-json
+```
 
 ## Választás a két alkalmazás közül
 
