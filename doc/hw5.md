@@ -58,7 +58,7 @@ Egy cloude native alkalmazásnál előny, ha minnél gyorsabban újta tud induln
 változattal fogok dolgozni.
 
 
-## Log szürés és formázás feladat:
+## Log szűrés és formázás feladat:
 
 
 ```
