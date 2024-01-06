@@ -10,6 +10,8 @@ Igény a struktúrált logolás (pl. json) is, ezért a lehetséges opciók köz
 
 a jó választás.
 
+A két values.yaml file-ba ez a sor kerül.
+
 ```yaml
 loggingMode: stdout-json
 ```
