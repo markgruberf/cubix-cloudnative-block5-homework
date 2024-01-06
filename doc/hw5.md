@@ -3,12 +3,15 @@
 
 A Kubernetes a stdout/stderror stream-eket tárolja lokális fájlrendszeren ideiglenesen.
 A jelenlegi setup a következő:
-![]()
+![](loggingarch.PNG)
 
 Igény a struktúrált logolás (pl. json) is, ezért a lehetséges opciók közül a 
 - 	stdout-json - prints out logs in JSON format to the standard out
 
 a jó választás.
+
+```yaml
+loggingMode: stdout-json```
 
 ## Választás a két alkalmazás közül
 
