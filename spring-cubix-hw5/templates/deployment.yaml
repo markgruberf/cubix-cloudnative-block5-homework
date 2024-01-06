@@ -31,6 +31,24 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ required "Image must be set in Values" .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          startupProbe:
+            periodSeconds: 1
+            failureThreshold: 30
+            httpGet:
+              port: management
+              path: /actuator/health/liveness
+          livenessProbe:
+            periodSeconds: 10
+            failureThreshold: 2
+            httpGet:
+              port: management
+              path: /actuator/health/liveness
+          readinessProbe:
+            periodSeconds: 5
+            failureThreshold: 1
+            httpGet:
+              port: management
+              path: /actuator/health/readiness
           env:
           - name: JAVA_OPTS
             value: {{ .Values.javaOpts | quote }}
