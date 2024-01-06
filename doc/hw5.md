@@ -3,7 +3,7 @@
 
 A Kubernetes a stdout/stderror stream-eket tárolja lokális fájlrendszeren ideiglenesen.
 A jelenlegi setup a következő:
-![](logfilter.PNG)
+![]()
 
 Igény a struktúrált logolás (pl. json) is, ezért a lehetséges opciók közül a 
 - 	stdout-json - prints out logs in JSON format to the standard out
@@ -13,7 +13,7 @@ a jó választás.
 ## Választás a két alkalmazás közül
 
 A két alkalmazás sacc/kb ugyan azt logolja, az egyetlen különbség a startup time.
-![](http://)
+![](startup-logs.png)
 
 - jvm 19.682s
 - native 0.244s
@@ -82,7 +82,7 @@ Return response with number 53-Ferenc
 2024-01-06 15:17:24	
 Request arrived to demo endpoint with number 5-Ferenc
 ```
-![](http://)
+![](logfilter.PNG)
 
 ## Health check feladat
 
